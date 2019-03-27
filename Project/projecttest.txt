@@ -1,0 +1,14 @@
+
+SELECT Nom FROM client ;
+
+SELECT NUM, Nom FROM viticulteur ;
+
+SELECT ALL Nom FROM viticulteur;
+
+SELECT DISTINCT NVin FROM vin WHERE NVin > 1;
+
+SELECT DISTINCT NClient FROM commande;
+
+SELECT NClient FROM commande WHERE NClient > 2;
+
+SELECT DISTINCT  NClient FROM commande WHERE NClient > 2;

@@ -1,0 +1,17 @@
+ast.cmo : value.cmo relation.cmi env.cmi ast.cmi
+ast.cmx : value.cmx relation.cmx env.cmx ast.cmi
+ast.cmi : relation.cmi env.cmi
+env.cmo : env.cmi
+env.cmx : env.cmi
+env.cmi :
+lexer.cmo : parser.cmo
+lexer.cmx : parser.cmx
+main.cmo : parser.cmo lexer.cmo env.cmi ast.cmi
+main.cmx : parser.cmx lexer.cmx env.cmx ast.cmx
+parser.cmo : ast.cmi
+parser.cmx : ast.cmx
+relation.cmo : relation.cmi
+relation.cmx : relation.cmi
+relation.cmi :
+value.cmo :
+value.cmx :
